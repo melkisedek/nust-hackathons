@@ -54,3 +54,8 @@ between 1 and 30 characters, inclusive.
     warmer
     smallest
     rarer
+
+## Clarification
+
+The input file will not contain a number to indicate the number of words in 
+file as mentioned in the [input](#input) section above.
