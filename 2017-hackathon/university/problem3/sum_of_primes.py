@@ -1,5 +1,5 @@
 import math
-from itertools import permutations, combinations
+from itertools import combinations
 
 # prime checking function by [socratica](https://youtu.be/2p3kwF04xcA)
 def is_prime(n):
@@ -41,7 +41,10 @@ with open('sample_input.txt') as sample_input:
         # e.g 2*3*5 = 3*5*2 = 5*3*2 ...ect.
         factor_combinations = combinations(prime_factors, k)
         summing_sets = 0   # number of set that sum up to a total equal to n
-        for a_combination in factor_combinations:
-            if sum(a_combination) == n:
+
+        # sum all the combinations
+        all_combination_sums = map(sum, factor_combinations)
+        for a_combination_sum in all_combination_sums:
+            if a_combination_sum == n:
                 summing_sets += 1
         print(summing_sets)
