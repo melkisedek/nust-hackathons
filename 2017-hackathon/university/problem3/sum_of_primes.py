@@ -38,7 +38,7 @@ with open('sample_input.txt') as sample_input:
 
         # Find all combinations of the prime factors k in each set/group
         # We use combinations because order doesn't matter
-        # e.g 2*3*5 = 3*5*2 = 5*3*2 ...ect.
+        # e.g 2+3+5 = 3+5+2 = 5+3+2 ...ect.
         factor_combinations = combinations(prime_factors, k)
         summing_sets = 0   # number of set that sum up to a total equal to n
 
