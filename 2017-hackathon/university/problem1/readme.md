@@ -53,3 +53,9 @@ is your friend’s answer to step 4.
     
     1. odd 18
     2. even 19
+
+
+## Clarification 
+
+Note that step 4 in the [description](#problem-description) is the only step 
+that a result is expected. 
