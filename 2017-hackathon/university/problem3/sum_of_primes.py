@@ -29,6 +29,10 @@ with open('sample_input.txt') as sample_input:
         n, k = line.strip().split()  # using tuple unpacking to assign n and k
         n, k = int(n), int(k)        # convert input strings to integers
 
+        # don't compute in line starts with 0
+        if n == 0:
+            break
+
         # Find all prime factors of n
         prime_factors = []
         # Add 1 to n, range(a, b) always ends at b-1
